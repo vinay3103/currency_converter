@@ -1,5 +1,5 @@
 const currencies = {
-    "AED": { "name": "United Arab Emirates Dirham", "flag": "assets/flags/ae.svg" },
+    "AED": { "name": "United Arab Emirates Dirham", "flag": "ae.svg" },
     "AFN": { "name": "Afghan Afghani", "flag": "assets/flags/af.svg" },
     "ALL": { "name": "Albanian Lek", "flag": "assets/flags/al.svg" },
     "AMD": { "name": "Armenian Dram", "flag": "assets/flags/am.svg" },
