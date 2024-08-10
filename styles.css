@@ -1,0 +1,124 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    overflow: hidden;
+}
+
+/* Converter box styling */
+.converter-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    backdrop-filter: blur(10px);
+    transform: translateY(50px);
+    opacity: 0;
+    animation: slideUpFadeIn 1s forwards;
+}
+
+/* Currency select and input styling */
+.currency-select, .amount-input {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.select-box {
+    display: flex;
+    align-items: center;
+    background: #f0f0f0;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.currency-flag {
+    margin-left: 10px;
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s ease;
+}
+
+.select-box:hover {
+    background-color: #e0e0e0;
+}
+
+.select-box:hover .currency-flag {
+    transform: scale(1.1);
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Result styling */
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    opacity: 0;
+    animation: fadeIn 1s 1s forwards;
+}
+
+/* Keyframes for animations */
+@keyframes slideUpFadeIn {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
